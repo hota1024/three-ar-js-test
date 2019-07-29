@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
     "experimentalDecorators": true,
-    "target": "es6",
-    "module": "commonjs",
+    "target": "es5",
+    "module": "es2015",
     "declaration": true,
     "outDir": "./lib/",
     "rootDir": "./src/",
     "sourceMap": true,
     "baseUrl": "./",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "lib": ["es2019", "dom"]
   },
   "include": ["src"],
   "exclude": ["test"]
